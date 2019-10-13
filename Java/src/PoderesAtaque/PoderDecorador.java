@@ -12,7 +12,7 @@ public class PoderDecorador extends Ataque {
 	}
 	
 	public int getDano() {
-		return danoDecorado.getDano() + this.getDano();
+		return danoDecorado.getDano() + this.dano;
 	}
 	
 	public Ataque getDanoDecorado() {

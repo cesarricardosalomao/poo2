@@ -1,3 +1,10 @@
+/*
+ * Alunos:
+ * César Ricardo Salomão Junior - 11811BSI226
+ * Nicolas de Melo Proença - 11811BSI234
+ * Caio Marcio Santos - 11811BSI223
+ */
+
 package Principal;
 
 import Escudo.Escudo;
@@ -9,10 +16,52 @@ import Observer.Inimigos;
 import Personagens.Personagem;
 import Personagens.Personagem01;
 import PoderesAtaque.PoderForte;
+import PoderesAtaque.PoderFraco;
+import PoderesAtaque.PoderMedio;
+import TiposAtaque.Ataque;
+import TiposAtaque.AtkMedio;
+import TiposAtaque.Forte;
+import TiposAtaque.Fraco;
 
 public class Main {
 
 	public static void main(String[] args) throws InterruptedException {
+
+		
+		/* TESTE PADRAO DECORATOR 
+		 * 
+		 * 
+		 * 
+		 * 
+		 * 
+		 * */
+				
+				Personagem p1 = new Personagem01();
+				Ataque a1 = new Forte();
+				p1.setAtaque(a1);
+				System.out.println("Poder recebido.");
+				System.out.println("Ataque do personagem: " + p1.getAtaque().getDano());	
+				a1 = new PoderForte(a1);
+				p1.setAtaque(a1);
+				System.out.println("Poder recebido.");
+				System.out.println("Ataque do personagem: " + p1.getAtaque().getDano());	
+				a1 = new PoderMedio(a1);
+				p1.setAtaque(a1);
+				System.out.println("Poder recebido.");
+				System.out.println("Ataque do personagem: " + p1.getAtaque().getDano());
+				
+				
+				
+/* 
+ * 
+ * 
+ * 
+ * TESTE das 4 primeiras iterações
+ * 
+ *  
+ *  */		
+		
+		
 //		Personagem viking = new Personagem();
 //		Inimigos i1 = new Inimigos(5, 10, 33);
 //		Inimigos i2 = new Inimigos(13, 15, 759);
@@ -33,13 +82,26 @@ public class Main {
 //            viking.show();
 //            Thread.sleep(200);
 //        }
-//        
+        
+
 		
-		Personagem p1 = new Personagem01();
-		System.out.println("Dano do personagem: " + p1.getA().getDano());
-		p1 = new PoderForte();
+
 		
 		
+/*
+ * 
+ *  
+ *  
+ *  
+ *  
+ *  
+ *  OUTROS TESTES
+ *  
+ *   
+ *   
+ *   
+ *   
+ *   */	
 //		viking.levarDano(0); //levando 0 de dano só para mostrar a vida inicial do viking.
 //		System.out.print("\n");
 //		

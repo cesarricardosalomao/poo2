@@ -20,30 +20,6 @@ public class Personagem implements Sujeito{
 	private int y;
 	
 	private ArrayList<Observador> lista = new ArrayList<Observador>();
-	
-	public Ataque getA() {
-		return a;
-	}
-
-	public void setA(Ataque a) {
-		this.a = a;
-	}
-
-	public Movimento getC() {
-		return c;
-	}
-
-	public void setC(Movimento c) {
-		this.c = c;
-	}
-
-	public Pulo getP() {
-		return p;
-	}
-
-	public void setP(Pulo p) {
-		this.p = p;
-	}
 
 	public int getX() {
 		return x;
@@ -77,6 +53,9 @@ public class Personagem implements Sujeito{
 	
 	public void setAtaque(Ataque a) {
 		this.a = a;
+	}
+	public Ataque getAtaque() {
+		return this.a;
 	}
 	
 	public void setMovimento(Movimento c) {

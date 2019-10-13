@@ -6,7 +6,7 @@ public class PoderFraco extends PoderDecorador{
 
 	public PoderFraco(Ataque danoDecorado) {
 		super(danoDecorado);
-		setDano(5);
+		setDano(7);
 	}
 
 }

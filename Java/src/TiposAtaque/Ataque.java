@@ -2,11 +2,11 @@ package TiposAtaque;
 
 public abstract class Ataque {
 
-	private int dano = 0;
+	protected int dano;
 	
 	public abstract void atacar();
 
-	public  int getDano() {
+	public int getDano() {
 		return dano;
 	}
 
