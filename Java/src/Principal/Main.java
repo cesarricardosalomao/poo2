@@ -7,31 +7,39 @@ import Escudo.Escudo25;
 import Escudo.Escudo50;
 import Observer.Inimigos;
 import Personagens.Personagem;
+import Personagens.Personagem01;
+import PoderesAtaque.PoderForte;
 
 public class Main {
 
 	public static void main(String[] args) throws InterruptedException {
-		Personagem viking = new Personagem();
-		Inimigos i1 = new Inimigos(5, 10, 33);
-		Inimigos i2 = new Inimigos(13, 15, 759);
-		Inimigos i3 = new Inimigos(24, 10, 37);
-		Inimigos i4 = new Inimigos(15, 55, 555);
-		Inimigos i5 = new Inimigos(57, 20, 111);
-		Inimigos i6 = new Inimigos(18, 35, 246);
+//		Personagem viking = new Personagem();
+//		Inimigos i1 = new Inimigos(5, 10, 33);
+//		Inimigos i2 = new Inimigos(13, 15, 759);
+//		Inimigos i3 = new Inimigos(24, 10, 37);
+//		Inimigos i4 = new Inimigos(15, 55, 555);
+//		Inimigos i5 = new Inimigos(57, 20, 111);
+//		Inimigos i6 = new Inimigos(18, 35, 246);
+//		
+//		viking.addObserver(i1);
+//		viking.addObserver(i2);
+//		viking.addObserver(i3);
+//		viking.addObserver(i4);
+//		viking.addObserver(i5);
+//		viking.addObserver(i6);
+//
+//		
+//        while(true){
+//            viking.show();
+//            Thread.sleep(200);
+//        }
+//        
 		
-		viking.addObserver(i1);
-		viking.addObserver(i2);
-		viking.addObserver(i3);
-		viking.addObserver(i4);
-		viking.addObserver(i5);
-		viking.addObserver(i6);
-
+		Personagem p1 = new Personagem01();
+		System.out.println("Dano do personagem: " + p1.getA().getDano());
+		p1 = new PoderForte();
 		
-        while(true){
-            viking.show();
-            Thread.sleep(200);
-        }
-        
+		
 //		viking.levarDano(0); //levando 0 de dano só para mostrar a vida inicial do viking.
 //		System.out.print("\n");
 //		
